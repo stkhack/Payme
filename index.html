@@ -142,8 +142,8 @@
 <!-- Failure Page -->
 <div id="failurePage" style="display:none;">
   <div class="failure-container">
-    <div class="failure-icon">✅</div>
-    <p class="failure-message">verification successfull.</p>
+    <div class="failure-icon">❌</div>
+    <p class="failure-message">Failed to verify. please make payment before verifying.</p>
     <button class="button button-back" onclick="showVerificationPage()">Back to Verification</button>
   </div>
 </div>
@@ -196,7 +196,7 @@
     // Redirect to failure page after 3 minutes (180000ms)
     setTimeout(() => {
       showFailurePage();
-    }, 50000);
+    }, 30000);
   }
 
   // Show Failure Page
